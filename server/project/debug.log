@@ -1,0 +1,14 @@
+Received registration data: {'email': 'belenovavaleria@gmail.com', 'password': 'cvbnm,./'}
+Validation errors: {'name': [ErrorDetail(string='This field is required.', code='required')], 'email': [ErrorDetail(string='user with this email already exists.', code='unique')], 'telephon': [ErrorDetail(string='This field is required.', code='required')]}
+Received registration data: {'email': 'belenovavaleria@gmail.com', 'password': 'cvbnm,./'}
+Validation errors: {'name': [ErrorDetail(string='This field is required.', code='required')], 'email': [ErrorDetail(string='user with this email already exists.', code='unique')], 'telephon': [ErrorDetail(string='This field is required.', code='required')]}
+Received registration data: {'name': 'Пупкин Василий Сергеевич', 'telephon': '89588867269', 'email': 'belenovavaleria@gmail.com', 'password': 'иригесрам'}
+Validation errors: {'email': [ErrorDetail(string='user with this email address already exists.', code='unique')]}
+Received registration data: {'name': 'Измайлов Федр Исакович', 'telephon': '89990905678', 'email': 'pinkbirdvb@gmail.com', 'password': '456tyu90o'}
+Error creating user: UserManager.create_user() missing 1 required positional argument: 'username'
+Received registration data: {'name': 'Измайлов Федр Исакович', 'telephon': '89990905678', 'email': 'pinkbirdvb@gmail.com', 'password': '456tyu90o'}
+Received registration data: {'name': 'Измайлов Федр Исакович', 'telephon': '89990905678', 'email': 'pinkbirdvb@gmail.com', 'password': '456tyu90o'}
+Validation errors: {'email': [ErrorDetail(string='user with this email address already exists.', code='unique')]}
+Received registration data: {'name': 'Привалов Руслан Андреевич', 'telephon': '89902013532', 'email': 'snakefvg@mail.com', 'password': '456tyu90o'}
+Error creating user: UserManager.create_user() missing 1 required positional argument: 'username'
+Received registration data: {'name': 'Южный Андрей Андреевич', 'telephon': '87569652145', 'email': 'redSnake@mail.com', 'password': '345tyu890o'}
