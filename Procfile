@@ -1,1 +1,1 @@
-web: cd /opt/render/project/src/server/project && pip install -r requirements.txt && python manage.py migrate && python manage.py runserver 0.0.0.0:$PORT 
+web: cd /opt/render/project/src/server/project && python manage.py migrate && python manage.py runserver 0.0.0.0:$PORT 
