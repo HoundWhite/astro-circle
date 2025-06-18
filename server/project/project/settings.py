@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-zu+3=xb5)x_54)1r)@c_k%f+m3-0ko6rkik4iup0mf&fz0u$j$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['astro-circle.onrender.com']
 
 
 # Application definition
@@ -80,11 +80,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'key',
-        'USER': 'admin',
-        'PASSWORD': '1290',
-        'HOST': '127.0.0.1',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'astro_4464',
+        'USER': 'astro_4464_user',
+        'PASSWORD': 'vjFHBudCL7EsM1ZVa7PJ2I6pBG8kZhpZ',
+        'HOST': 'dpg-d17qrpmmcj7s73c695ng-a.oregon-postgres.render.com',
         'PORT': '5432',
     }
 }
@@ -154,7 +154,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
-ALLOWED_HOSTS = ['*']  # временно для разработки, в production укажите конкретные домены
+
 
 # Настройки логирования
 LOGGING = {
