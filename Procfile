@@ -1,1 +1,1 @@
-web: cd backend && python manage.py migrate && gunicorn backend.wsgi:application --chdir backend 
+web: cd backend && python manage.py migrate && PYTHONPATH=$PYTHONPATH:. gunicorn wsgi:application 
