@@ -12,3 +12,11 @@ Validation errors: {'email': [ErrorDetail(string='user with this email address a
 Received registration data: {'name': 'Привалов Руслан Андреевич', 'telephon': '89902013532', 'email': 'snakefvg@mail.com', 'password': '456tyu90o'}
 Error creating user: UserManager.create_user() missing 1 required positional argument: 'username'
 Received registration data: {'name': 'Южный Андрей Андреевич', 'telephon': '87569652145', 'email': 'redSnake@mail.com', 'password': '345tyu890o'}
+Received registration data: {'name': 'Южный Андрей Андреевич', 'telephon': '87569652145', 'email': 'pinkbirdvb@gmail.com', 'password': '456tyu90o'}
+Error creating user: 'password'
+Received registration data: {'name': 'Южный Андрей Андреевич', 'telephon': '87569652145', 'email': 'pinkbirdvb@gmail.com', 'password': '456tyu90o'}
+Error creating user: 'password'
+Received registration data: {'name': 'Южный Андрей Андреевич', 'telephon': '87569652145', 'email': 'pinkbirdvb@gmail.com', 'password': '456tyu90o'}
+Serializer is valid
+User created successfully: pinkbirdvb@gmail.com
+Token created: c3f73b9c311c870a46fde7be6e53ddafe0800159

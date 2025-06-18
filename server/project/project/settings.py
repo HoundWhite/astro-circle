@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-zu+3=xb5)x_54)1r)@c_k%f+m3-0ko6rkik4iup0mf&fz0u$j$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['astro-circle.onrender.com']
+ALLOWED_HOSTS = ['astro-circle.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition

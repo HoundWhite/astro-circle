@@ -7,17 +7,34 @@ import uuid
 
 # КЛАСС СЕРИАЛИЗАЦИИ ДАННЫХ ПОЛЬЗОВАТЕЛЯ
 class UserSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True, required=True)
+    
     # определяем метаданные(как будет вести себя модель в программе)
     class Meta:
         # указываем модель, поля
         model = User
-        fields = ['id', 'name', 'email', 'password', 'telephon']
+        fields = ['id', 'name', 'email', 'telephon', 'password']
         # ЭКСТРАКВАРГИ ШКВАРКИ
         # Это  key-word-argument сюда мы задаем шо пароль только для чтения + емейл как обязательное поле
         extra_kwargs = {
+            'email': {'required': True},
             'password': {'write_only': True},
-            'email': {'required': True}
+            'name': {'required': True},
+            'telephon': {'required': True}
         }
+
+    def validate_telephon(self, value):
+        # Проверяем формат телефона
+        if not re.match(r'^\+?1?\d{9,15}$', value):
+            raise serializers.ValidationError('Неверный формат телефона')
+        return value
+
+    def validate_password(self, value):
+        # Проверяем длину пароля
+        if len(value) < 8:
+            raise serializers.ValidationError('Пароль должен содержать минимум 8 символов')
+        return value
+
 # СОЗДАЕМ ЮЗЕРА С ВАЛИДАЦИЕЙ ПОЛЕЙ
     def create(self, validated_data):
         # Проверяем, существует ли пользователь с таким email

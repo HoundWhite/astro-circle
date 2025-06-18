@@ -29,10 +29,10 @@ class AdminUserListView(generics.ListAPIView):
 
     # представление на создание списка пользователей
 class UserListView(generics.ListCreateAPIView):
-  # работа с БД где мы берем все записи в таблицу юзера
+    # работа с БД где мы берем все записи в таблицу юзера
     queryset = User.objects.all()
-     # вызываем предыдущий сериализатор данных
-    serializer_class = UserSerializer()
+    # вызываем предыдущий сериализатор данных
+    serializer_class = UserSerializer
 
 
 # РЕГА РЕГА
@@ -45,9 +45,12 @@ class RegApiView(APIView):
         serializer = UserSerializer(data=request.data)
         
         if serializer.is_valid():
+            logger.info("Serializer is valid")
             try:
                 user = serializer.save()
+                logger.info(f"User created successfully: {user.email}")
                 token, created = Token.objects.get_or_create(user=user)
+                logger.info(f"Token {'created' if created else 'retrieved'}: {token.key}")
                 return Response({
                     'success': True,
                     'token': token.key,
@@ -95,8 +98,15 @@ class UserProfileView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        serializer = UserSerializer(request.user)
-        return Response(serializer.data)
+        try:
+            logger.info(f"Fetching profile for user: {request.user.email}")
+            serializer = UserSerializer(request.user)
+            return Response(serializer.data)
+        except Exception as e:
+            logger.error(f"Error fetching user profile: {str(e)}")
+            return Response({
+                'error': 'Ошибка при получении данных профиля'
+            }, status=status.HTTP_400_BAD_REQUEST)
 
 class ProductListView(generics.ListAPIView):
     queryset = Product.objects.all()
