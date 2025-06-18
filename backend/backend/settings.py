@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Add the project directory to the Python path
 import sys
-sys.path.append(str(BASE_DIR))
+sys.path.insert(0, str(BASE_DIR.parent))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-your-secret-key-here')

@@ -1,1 +1,1 @@
-web: cd backend && python manage.py migrate && PYTHONPATH=$PYTHONPATH:. gunicorn wsgi:application 
+web: cd server/project && python manage.py migrate && python manage.py runserver 0.0.0.0:$PORT 
