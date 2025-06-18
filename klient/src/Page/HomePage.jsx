@@ -11,7 +11,7 @@ const HomePage = () => {
           {/* Приветствие */}
           <div className='flex lg:flex-row flex-col gap-y-5 bg-celestial-500'>
              <div className='lg:w-1/2'>
-                <img src='./media/glav.png' alt='приветствие'></img>
+                <img src='./media/glav.png' alt='приветствие' loading='lazy' />
             </div>
             <div className='flex flex-col gap-y-3 justify-center lg:w-1/2 lg:pl-16 lg:pr-28 px-6 pb-7 2xl:text-lg md:text-sm text-sm text-celestial-100 text-justify'>
               <h2 className='lg:text-4xl md:text-2xl text-xl text-center font-bold md:text-left'>Добро пожаловать на сайт об астрологии и нумерологии!</h2>
@@ -32,7 +32,7 @@ const HomePage = () => {
                 к моему полю, моей энергии получает изменения в жизни в лучшую сторону</p>
             </div>
             <div className=''>
-              <img src='./media/osnov.png' alt='фото директора'></img>
+              <img src='./media/osnov.png' alt='фото директора' loading='lazy' />
             </div>
           </div>
           {/*О сайте */}
@@ -52,7 +52,7 @@ const HomePage = () => {
             <div className='flex lg:flex-row flex-col gap-x-5 gap-y-5 items-center'>
               {/* Карточка 1 */}
               <div className='md:w-[587px] rounded-3xl bg-celestial-500 overflow-hidden max-w-sm md:max-w-none'>
-                <img src='./media/Владик.jpg' alt='Владислав'></img>
+                <img src='./media/Владик.jpg' alt='Владислав' loading='lazy' />
                 <p className='mb-16 mt-8 mx-9 text-celestial-100 2xl:text-lg md:text-sm text-base text-justify'>Добрый день! Меня зовут Владислав, и я нумеролог с многолетним опытом работы. Моя миссия - помочь вам раскрыть тайны 
                   вашей судьбы и понять свои жизненные задачи через изучение чисел и числовых сочетаний.  Я индивидуальные консультации, 
                   анализы числовых кодов вашей жизни и обучение, чтобы помочь вам преодолевать препятствия и достигать своих целей. Давайте 
@@ -60,7 +60,7 @@ const HomePage = () => {
               </div>
               {/* Карточка 2 */}
               <div className='md:w-[587px] rounded-3xl bg-celestial-500 overflow-hidden max-w-sm md:max-w-none'>
-                <img src='./media/Аня.jpg' alt='Анна'></img>
+                <img src='./media/Аня.jpg' alt='Анна' loading='lazy' />
                 <p className='mb-16 mt-8 mx-9 text-celestial-100 2xl:text-lg md:text-sm text-base text-justify'>Приветствую вас! Меня зовут Ана, и я астролог с опытом работы, готова помочь вам понять себя и свои возможности через 
                   знания звезд и планет. Мои консультации и анализы астрологических карт индивидуальны и направлены на помощь вам в принятии 
                   важных решений, раскрытии потенциала и достижении гармонии. Давайте вместе исследуем вашу астрологическую карту и создадим 
@@ -68,7 +68,7 @@ const HomePage = () => {
               </div>
               {/* Карточка 3 */}
               <div className='md:w-[587px] rounded-3xl bg-celestial-500 overflow-hidden max-w-sm md:max-w-none'>
-                <img src='./media/Катя.jpg' alt='Екатерина'></img>
+                <img src='./media/Катя.jpg' alt='Екатерина' loading='lazy' />
                 <p className='mb-16 mt-8 mx-9 text-celestial-100 2xl:text-lg md:text-sm text-base text-justify'>Добро пожаловать! Меня зовут Екатерина, и я астролог с многолетним опытом. Моя страсть - помогать людям раскрыть потенциал 
                   своей личности и найти гармонию в жизни через астрологические знания. Я предлагаю персонализированные консультации, 
                   астрологические анализы и обучение, помогающие вам лучше понять себя и свой жизненный путь. Давайте вместе исследуем звезды и 

@@ -13,7 +13,7 @@ const NumerologyPage = () => {
 
           {/* справка */}
           <div className='flex lg:flex-row flex-col gap-10 '>
-            <img src='./media/num_this.png' className='2xl:w-auto lg:w-[515px] lg:flex hidden' alt='астрология' />
+            <img src='./media/num_this.png' className='2xl:w-auto lg:w-[515px] lg:flex hidden' alt='нумерология' loading='lazy' />
             <div className='flex flex-col gap-y-3 justify-center indent-4 2xl:text-lg md:text-sm text-sm text-celestial-100 text-justify'>
                 <p>Нумерология — это мистическая наука о числах и их влиянии на человека и его судьбу. Она основана на убеждении, что каждое число обладает уникальной вибрацией и символикой, способной раскрыть внутренние черты личности, жизненные тенденции и важные события. Нумерология помогает людям находить смысл в числах, которые их окружают: дате рождения, имени, числах жизненного пути и судьбы. Эти числа служат своеобразными «ключами», открывающими доступ к самопознанию и внутренним ресурсам.</p>
                 <p>Современная нумерология насчитывает несколько направлений — от классической пифагорейской системы до более сложных подходов, таких как ведическая и каббалистическая нумерология. В каждом из этих направлений числа интерпретируются немного по-разному, но цель остается неизменной: помочь человеку лучше понять себя и свою связь с окружающим миром.</p>
@@ -22,7 +22,7 @@ const NumerologyPage = () => {
           </div>
           {/* история */}
           <div >
-            <img src='./media/num_his.png' className='float-right 2xl:w-auto lg:w-[515px] lg:flex hidden m-5' alt='история астрологии' />
+            <img src='./media/num_his.png' className='float-right 2xl:w-auto lg:w-[515px] lg:flex hidden m-5' alt='история_нумерологии' loading='lazy' />
             <div className='justify-center 2xl:text-lg md:text-sm text-sm text-celestial-100 text-justify'>
                 <h3 className='lg:text-2xl md:text-lg text-lg text-center font-bold md:text-left mb-4'>История использования нумерологии</h3>
                 <p>Нумерология с древности использовалась как мистический инструмент для понимания мира и человеческой судьбы. В таких культурах, как египетская и вавилонская, числам придавали священное значение, считая, что они несут в себе божественную суть. Жрецы использовали числа в религиозных обрядах, а также в гадательных практиках, пытаясь через них предсказывать будущее или понять волю богов. Вавилоняне, например, связывали числа с астрологическими знаниями, стремясь уловить закономерности между движением небесных тел и земными событиями.</p>
@@ -39,7 +39,7 @@ const NumerologyPage = () => {
           </div>
           {/* виды и элементы */}
           <div className='flex lg:flex-row flex-col gap-10 '>
-            <img src='./media/num_types.png' className='2xl:w-auto lg:w-[515px] lg:flex hidden' alt='астрология' />
+            <img src='./media/num_types.png' className='2xl:w-auto lg:w-[515px] lg:flex hidden' alt='типы_нумерологии' loading='lazy' />
             <div className='flex flex-col gap-y-3 justify-center indent-4 2xl:text-lg md:text-sm text-sm text-celestial-100 text-justify'>
             <h3 className='lg:text-2xl md:text-lg text-lg text-center font-bold md:text-left mb-4'>Виды нумерологии</h3>
               <ul className='list-disc list-inside'>

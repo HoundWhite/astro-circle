@@ -13,7 +13,7 @@ const AstrologyPage = () => {
 
           {/* справка */}
           <div className='flex lg:flex-row flex-col gap-10 '>
-            <img src='./media/astro_this.png' className='2xl:w-auto lg:w-[515px] lg:flex hidden' alt='астрология' />
+            <img src='./media/astro_this.png' className='2xl:w-auto lg:w-[515px] lg:flex hidden' alt='астрология' loading='lazy' />
             <div className='flex flex-col gap-y-3 justify-center indent-4 2xl:text-lg md:text-sm text-sm text-celestial-100 text-justify'>
               <p>Астрология — это древняя система знаний и практик, изучающая влияние небесных тел (планет, звезд, Луны и Солнца) на человека и земные события. Считается, что расположение планет и звезд в момент рождения человека способно раскрыть его характер, предрасположенности и потенциальный жизненный путь. Астрология предполагает, что Вселенная взаимосвязана с личной энергией каждого человека, а космические ритмы могут воздействовать на наши эмоции, поведение и судьбу.</p>
               <p>Здесь вы узнаете, что такое астрология и нумерология, как они работают и какое влияние могут 
@@ -23,7 +23,7 @@ const AstrologyPage = () => {
           </div>
           {/* история */}
           <div >
-            <img src='./media/astro_his.png' className='float-right 2xl:w-auto lg:w-[515px] lg:flex hidden m-5' alt='история астрологии' />
+            <img src='./media/astro_his.png' className='float-right 2xl:w-auto lg:w-[515px] lg:flex hidden m-5' alt='история_астрологии' loading='lazy' />
             <div className='justify-center 2xl:text-lg md:text-sm text-sm text-celestial-100 text-justify'>
               <h3 className='lg:text-2xl md:text-lg text-lg text-center font-bold md:text-left mb-4'>История использования астрологии</h3>
               <p>Астрология имеет древние корни и на протяжении тысячелетий играла важную роль в жизни человека. Её использование в прошлом выходило далеко за пределы личных гороскопов и было тесно связано с наукой, религией, политикой и медициной. В древнем Вавилоне, где астрология как система впервые оформилась, наблюдение за движением небесных тел имело в первую очередь прикладной характер: звёзды и планеты рассматривались как знамения, по которым можно было предсказывать судьбы правителей, исходы войн, природные катаклизмы и урожаи. Тогда гороскоп составлялся не для личности, а для страны, города или царя — именно он считался главным носителем судьбы народа.
@@ -44,7 +44,7 @@ const AstrologyPage = () => {
           </div>
           {/* виды и элементы */}
           <div className='flex lg:flex-row flex-col gap-10 '>
-            <img src='./media/astro_types.png' className='2xl:w-auto lg:w-[515px] lg:flex hidden' alt='астрология' />
+            <img src='./media/astro_types.png' className='2xl:w-auto lg:w-[515px] lg:flex hidden' alt='типы_астрологии' loading='lazy' />
             <div className='flex flex-col gap-y-3 justify-center indent-4 2xl:text-lg md:text-sm text-sm text-celestial-100 text-justify'>
             <h3 className='lg:text-2xl md:text-lg text-lg text-center font-bold md:text-left mb-4'>Основные виды астрологии:</h3>
               <ul className='list-disc list-inside'>

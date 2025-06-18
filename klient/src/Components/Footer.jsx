@@ -30,7 +30,7 @@ const Footer = () => {
                   className="text-blue-500 hover:text-blue-700 transition w-auto h-auto"
                   aria-label="Telegram"
                   >
-                  <img src='/media/telegram.png' alt='telegram'></img>
+                  <img src='/media/telegram.png' alt='telegram' />
                   </a>
                   <a
                   href="https://vk.com/astronumcirclevk"
@@ -39,7 +39,7 @@ const Footer = () => {
                   className="text-blue-600 hover:text-blue-800 transition w-auto h-auto"
                   aria-label="VK"
                   >
-                  <img src='/media/vk.png' alt='vk'></img>
+                  <img src='/media/vk.png' alt='vk' />
                   </a>
                   <a
                   href="https://www.instagram.com/specialist_po_sudbe/?utm_medium=copy_link"
@@ -48,7 +48,7 @@ const Footer = () => {
                   className="text-blue-500 hover:text-blue-700 transition w-auto h-auto"
                   aria-label="Instagram"
                   >
-                  <img src='/media/insta.png' alt='instagram'></img>
+                  <img src='/media/insta.png' alt='instagram' />
                   </a>
               </div>
             </div>

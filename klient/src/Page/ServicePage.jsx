@@ -54,7 +54,7 @@ const ServicePage = () => {
             {/* карточки 2 */}
             <div className='flex lg:flex-row flex-col overflow-hidden w-full bg-celestial-500 rounded-3xl'>
               <div className='flex items-center justify-center overflow-hidden align-middle'>
-                <img src='./media/child.png' alt='детский разбор' className='md:max-w-none' />
+                <img src='./media/child.png' alt='детский_разбор' className='md:max-w-none' />
               </div>
               <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
@@ -83,7 +83,7 @@ const ServicePage = () => {
             {/* карточки 3 */}
             <div className='flex lg:flex-row flex-col overflow-hidden w-full bg-celestial-500 rounded-3xl'>
               <div className='flex items-center justify-center overflow-hidden align-middle'>
-                <img src='./media/group.png' alt='групповой разбор' className='md:max-w-none' />
+                <img src='./media/group.png' alt='групповой_разбор' className='md:max-w-none' />
               </div>
               <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
@@ -112,7 +112,7 @@ const ServicePage = () => {
             {/* карточки 4 */}
             <div className='flex lg:flex-row flex-col overflow-hidden w-full bg-celestial-500 rounded-3xl'>
               <div className='flex items-center justify-center overflow-hidden align-middle'>
-                <img src='./media/privat.png' alt='личный разбор' className='md:max-w-none' />
+                <img src='./media/privat.png' alt='личный_разбор' className='md:max-w-none' />
               </div>
               <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
@@ -141,7 +141,7 @@ const ServicePage = () => {
             {/* карточки 5 */}
             <div className='flex lg:flex-row flex-col overflow-hidden w-full bg-celestial-500 rounded-3xl'>
               <div className='flex items-center justify-center overflow-hidden align-middle'>
-                <img src='./media/online.png' alt='онлайн игра' className='md:max-w-none' />
+                <img src='./media/online.png' alt='онлайн_игра' className='md:max-w-none' />
               </div>
               <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
@@ -170,7 +170,7 @@ const ServicePage = () => {
             {/* карточки 6 */}
             <div className='flex lg:flex-row flex-col overflow-hidden w-full bg-celestial-500 rounded-3xl'>
               <div className='flex items-center justify-center overflow-hidden align-middle'>
-                <img src='./media/offline.png' alt='оффлайн игра' className='md:max-w-none' />
+                <img src='./media/offline.png' alt='оффлайн_игра' className='md:max-w-none' />
               </div>
               <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
@@ -200,7 +200,7 @@ const ServicePage = () => {
             {/* карточки 7 */}
             <div className='flex lg:flex-row flex-col overflow-hidden w-full bg-celestial-500 rounded-3xl'>
               <div className='flex items-center justify-center overflow-hidden align-middle'>
-                <img src='./media/master.png' alt='онлайн игра' className='md:max-w-none' />
+                <img src='./media/master.png' alt='ведущий' className='md:max-w-none' />
               </div>
               <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
@@ -229,7 +229,7 @@ const ServicePage = () => {
             {/* карточки 8 */}
             <div className='flex lg:flex-row flex-col overflow-hidden w-full bg-celestial-500 rounded-3xl'>
               <div className='flex items-center justify-center overflow-hidden align-middle'>
-                <img src='./media/business.png' alt='онлайн игра' className='md:max-w-none' />
+                <img src='./media/business.png' alt='разбор_бизнесса' className='md:max-w-none' />
               </div>
               <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
