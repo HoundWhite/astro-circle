@@ -1,11 +1,10 @@
 import React from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
-import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 
 const ServicePage = () => {
-  const navigate = useNavigate();
+  
   const { addToCart } = useCart();
 
   // Обработка добавления услуги в корзину

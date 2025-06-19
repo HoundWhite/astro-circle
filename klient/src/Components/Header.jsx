@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Menu, UserCircle } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useNavigate, Link } from 'react-router-dom';
 
 const Header = () => {
