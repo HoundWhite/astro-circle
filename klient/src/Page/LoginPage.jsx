@@ -25,6 +25,8 @@ const LoginPage = () => {
             if (!response.ok) {
                 if (data.non_field_errors) {
                     setError({ general: data.non_field_errors[0] })
+                } else if (data.error) {
+                    setError({ general: data.error })
                 } else {
                     setError(data)
                 }
@@ -36,7 +38,8 @@ const LoginPage = () => {
             localStorage.setItem('user', JSON.stringify({
                 id: data.user_id,
                 email: data.email,
-                name: data.name
+                name: data.name,
+                telephon: data.telephon
             }))
 
             // Перенаправляем на главную страницу
@@ -96,6 +99,15 @@ const LoginPage = () => {
                 >
                         Войти
                 </button>
+                <div>
+                        <button 
+                            type='button' 
+                            className='text-celestial-200 2xl:text-base md:text-sm text-sm' 
+                            onClick={() => navigate('/registre')}
+                        >
+                            Зарегистрироваться
+                        </button>
+                </div> 
                 
             </form>
             </div>

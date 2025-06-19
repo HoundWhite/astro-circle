@@ -1,1 +1,1 @@
-web: cd server/project && python manage.py migrate && python manage.py runserver 0.0.0.0:$PORT 
+web: python server/project/manage.py runserver 0.0.0.0:$PORT 

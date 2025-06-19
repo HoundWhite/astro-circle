@@ -27,7 +27,7 @@ const ServicePage = () => {
               <div className='flex items-center justify-center overflow-hidden align-middle'>
                 <img src='./media/pair.png' alt='совместимость' className='md:max-w-none' />
               </div>
-              <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
+              <div className='m-8 flex flex-col lg:gap-0 gap-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
                   <p className='2xl:text-2xl md:text-lg text-xl font-semibold lg:text-start text-center'>Консультация по совместимости</p>
                   <p className='2xl:text-lg md:text-sm text-xs text-justify'>Хотите узнать, насколько вы и ваш партнер подходите друг другу? Наша консультация по совместимости предлагает вам уникальную возможность погрузиться в глубины ваших отношений и понять, как ваши карты взаимодействуют друг с другом.</p>
@@ -56,7 +56,7 @@ const ServicePage = () => {
               <div className='flex items-center justify-center overflow-hidden align-middle'>
                 <img src='./media/child.png' alt='детский_разбор' className='md:max-w-none' />
               </div>
-              <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
+              <div className='m-8 flex flex-col lg:gap-0 gap-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
                   <p className='2xl:text-2xl md:text-lg text-xl font-semibold lg:text-start text-center'>Консультация по детским картам</p>
                   <p className='2xl:text-lg md:text-sm text-xs text-justify'>Хотите узнать о внутреннем мире вашего ребенка и помочь ему раскрыть свой потенциал? Наша консультация по детским картам предлагает уникальный взгляд на мир вашего малыша через призму карт Таро, адаптированных специально для детей.</p>
@@ -85,7 +85,7 @@ const ServicePage = () => {
               <div className='flex items-center justify-center overflow-hidden align-middle'>
                 <img src='./media/group.png' alt='групповой_разбор' className='md:max-w-none' />
               </div>
-              <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
+              <div className='m-8 flex flex-col lg:gap-0 gap-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
                   <p className='2xl:text-2xl md:text-lg text-xl font-semibold lg:text-start text-center'>Разбор наставничества (групповое)</p>
                   <p className='2xl:text-lg md:text-sm text-xs text-justify'>Разбор наставничества - это процесс анализа и обсуждения деятельности наставника и его подопечного с целью оценки прогресса, выявления достижений и проблемных моментов, а также определения дальнейших шагов для развития. Этот процесс может проводиться как в рамках индивидуальных консультаций, так и в групповом формате.</p>
@@ -114,7 +114,7 @@ const ServicePage = () => {
               <div className='flex items-center justify-center overflow-hidden align-middle'>
                 <img src='./media/privat.png' alt='личный_разбор' className='md:max-w-none' />
               </div>
-              <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
+              <div className='m-8 flex flex-col lg:gap-0 gap-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
                   <p className='2xl:text-2xl md:text-lg text-xl font-semibold lg:text-start text-center'>Разбор наставничества (личное)</p>
                   <p className='2xl:text-lg md:text-sm text-xs text-justify'>Разбор наставничества - это процесс анализа и обсуждения деятельности наставника и его подопечного с целью оценки прогресса, выявления достижений и проблемных, а также определения дальнейших шагов развития. Этот процесс может как в рамках индивидуальных так и в групповом формате.</p>
@@ -143,7 +143,7 @@ const ServicePage = () => {
               <div className='flex items-center justify-center overflow-hidden align-middle'>
                 <img src='./media/online.png' alt='онлайн_игра' className='md:max-w-none' />
               </div>
-              <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
+              <div className='m-8 flex flex-col lg:gap-0 gap-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
                   <p className='2xl:text-2xl md:text-lg text-xl font-semibold lg:text-start text-center'>Трансформационная игра для онлайн группы</p>
                   <p className='2xl:text-lg md:text-sm text-xs text-justify'>Добро пожаловать в увлекательное и вдохновляющее путешествие к самопознанию! Это интерактивная трансформационная игра, специально разработанная для групповой работы на онлайн платформе. В течение игры вы совершите захватывающее путешествие по различным областям вашего внутреннего мира, раскрывая свои скрытые потребности, желания и возможности. Вы столкнетесь с интересными заданиями, упражнениями и рефлексиями, которые помогут вам лучше понять себя и свои цели в жизни.</p>
@@ -172,7 +172,7 @@ const ServicePage = () => {
               <div className='flex items-center justify-center overflow-hidden align-middle'>
                 <img src='./media/offline.png' alt='оффлайн_игра' className='md:max-w-none' />
               </div>
-              <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
+              <div className='m-8 flex flex-col lg:gap-0 gap-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
                   <p className='2xl:text-2xl md:text-lg text-xl font-semibold lg:text-start text-center'>Трансформационная игра для офлайн группы в Приморском крае</p>
                   <p className='2xl:text-lg md:text-sm text-xs text-justify'>Добро пожаловать в захватывающее приключение самопознания! Это интерактивная трансформационная игра, разработанная для групповой работы в офлайн формате. В течение игры вы отправитесь в путешествие по вашему внутреннему миру, исследуя свои мысли, чувства и убеждения. Вы столкнетесь с увлекательными заданиями, упражнениями и обсуждениями, которые помогут вам раскрыть свой потенциал и достичь новых высот в личном росте.</p>
@@ -202,13 +202,13 @@ const ServicePage = () => {
               <div className='flex items-center justify-center overflow-hidden align-middle'>
                 <img src='./media/master.png' alt='ведущий' className='md:max-w-none' />
               </div>
-              <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
+              <div className='m-8 flex flex-col lg:gap-0 gap-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
                   <p className='2xl:text-2xl md:text-lg text-xl font-semibold lg:text-start text-center'>Трансформационная игра (стать ведущим)</p>
                   <p className='2xl:text-lg md:text-sm text-xs text-justify'>Мы ищем вдохновенного и энергичного человека, который готов вести наши участников в захватывающее путешествие самопознания. Если вы готовы поделиться своей страстью к личностному росту и помочь другим открыть для себя новые горизонты, то этот вызов для вас!</p>
                   <p className='2xl:text-base md:text-xs text-xs italic text-justify'>Данная услуга будет оказываться в оговоренные дни</p>
                 </div>
-                <div className='flex gap-x-4 lg:self-end self-center'>
+                <div className='flex lg:self-end self-center'>
                   <button
                     type='button'
                     className='bg-celestial-100 md:py-3 py-2 md:px-10 px-5 rounded-3xl text-celestial-900 2xl:text-xl md:text-lg text-base font-semibold'
@@ -231,7 +231,7 @@ const ServicePage = () => {
               <div className='flex items-center justify-center overflow-hidden align-middle'>
                 <img src='./media/business.png' alt='разбор_бизнесса' className='md:max-w-none' />
               </div>
-              <div className='m-8 flex flex-col gap-y-9 justify-between w-5/6'>
+              <div className='m-8 flex flex-col lg:gap-0 gap-9 justify-between w-5/6'>
                 <div className='text-celestial-100 md:space-y-5 space-y-3'>
                   <p className='2xl:text-2xl md:text-lg text-xl font-semibold lg:text-start text-center'>Консультация для бизнеса</p>
                   <p className='2xl:text-lg md:text-sm text-xs text-justify'>Готовы раскрыть тайны вашего бизнеса с помощью астрономии и нумерологии? Наша консультация предлагает уникальный подход к анализу вашего бизнеса, используя знания космоса и чисел для обеспечения успеха и процветания.</p>

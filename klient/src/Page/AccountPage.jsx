@@ -33,16 +33,19 @@ const AccountPage = () => {
                     if (response.status === 401) {
                         // Если токен недействителен, перенаправляем на страницу входа
                         localStorage.removeItem('token');
+                        localStorage.removeItem('user');
                         navigate('/login');
                         return;
                     }
-                    throw new Error('Ошибка при загрузке данных пользователя');
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Ошибка при загрузке данных пользователя');
                 }
 
                 const data = await response.json();
                 setUser(data);
                 setLoading(false);
             } catch (err) {
+                console.error('Error fetching user data:', err);
                 setError(err.message);
                 setLoading(false);
             }
@@ -53,6 +56,7 @@ const AccountPage = () => {
 
     const handleLogout = () => {
         localStorage.removeItem('token');
+        localStorage.removeItem('user');
         navigate('/login');
     };
 
