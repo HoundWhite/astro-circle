@@ -9,11 +9,13 @@ const Header = () => {
   const navigate = useNavigate();
   const scienceRef = useRef(null);
 
+  // Проверка на авторизацию
   useEffect(() => {
     const token = localStorage.getItem('token');
     setIsAuthenticated(!!token);
   }, []);
 
+  // Защищенный переход
   const handleProtectedNavigation = (path) => {
     if (!isAuthenticated) {
       alert('Для доступа к этому разделу необходимо авторизоваться');
@@ -23,18 +25,21 @@ const Header = () => {
     navigate(path);
   };
 
+  // Выход из аккаунта
   const handleLogout = () => {
     localStorage.removeItem('token');
     setIsAuthenticated(false);
     navigate('/login');
   };
 
+  // Закрытие меню при клике вне него
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
       setIsOpen(false);
     }
   };
 
+  // Закрытие выпадающего меню при клике вне него
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (scienceRef.current && !scienceRef.current.contains(event.target)) {
@@ -54,8 +59,10 @@ const Header = () => {
   }, [isScienceDropdownOpen]);
 
   return (
+    // Шапка сайта
     <header className='bg-celestial-700'>
       <div className="flex md:px-9 px-3 py-5 justify-between max-w-[1920px] mx-auto">
+        {/* Логотип */}
         <div className='flex lg:text-4xl md:text-2xl text-3xl font-bold text-celestial-100 gap-x-5 items-center'>
           <button
             type='button'
@@ -67,9 +74,11 @@ const Header = () => {
           </button>
         </div>
 
+        {/* Меню */}
         <div className='flex gap-4 items-center'>
           <nav className="hidden md:flex gap-3 text-celestial-100 text-base font-normal relative">
             <div className="relative" ref={scienceRef}>
+              {/* Наука */}
               <button
                 type='button'
                 className="hover:text-celestial-300 transition flex items-center gap-1"
@@ -91,6 +100,7 @@ const Header = () => {
                 </svg>
               </button>
 
+              {/* Выпадающее меню */}
               {isScienceDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 w-40 bg-celestial-450 rounded-md shadow-lg z-20">
                   <button
@@ -117,11 +127,13 @@ const Header = () => {
               )}
             </div>
 
+            {/* Услуги и товары */}
             <button type='button' className="hover:text-celestial-300 transition" onClick={() => handleProtectedNavigation('/service')}>Услуги</button>
             <button type='button' className="hover:text-celestial-300 transition" onClick={() => handleProtectedNavigation('/products')}>Товары</button>
           </nav>
 
           <div className="flex space-x-4">
+          {/* Кнопка меню */}
             <button
               className="md:hidden focus:outline-none"
               onClick={() => setIsOpen(true)}
@@ -130,6 +142,7 @@ const Header = () => {
               <Menu className="w-7 h-7 text-celestial-100" />
             </button>
 
+            {/* Аккаунт */}
             {isAuthenticated ? (
               <>
                 <Link to="/account" className="account-link">
@@ -137,6 +150,7 @@ const Header = () => {
                     <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#ECD5DD"/>
                   </svg>
                 </Link>
+                {/* Выход и выход из аккаунта */}
                 <button
                   onClick={handleLogout}
                   className="text-celestial-100 hover:text-celestial-300 transition"
@@ -155,6 +169,7 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Мобильное меню */}
       {isOpen && (
         <div
           className="fixed inset-0  flex justify-center items-center z-50"

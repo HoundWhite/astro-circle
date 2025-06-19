@@ -13,6 +13,7 @@ const ProductDetailPage = () => {
     const [error, setError] = useState(null);
     const { addToCart } = useCart();
 
+    // Загрузка товара
     useEffect(() => {
         const fetchProduct = async () => {
             try {
@@ -28,6 +29,7 @@ const ProductDetailPage = () => {
         fetchProduct();
     }, [id]);
 
+    // Добавление товара в корзину
     const handleAddToCart = () => {
         if (product) {
             addToCart(product);
@@ -62,8 +64,10 @@ const ProductDetailPage = () => {
     return (
         <div>
             <Header />
+            {/* Страница детального описания товара */}
             <section className='my-10 max-w-[1920px] mx-auto'>
                 <div className='flex flex-col gap-y-5 bg-celestial-500 md:px-14 px-2 py-5'>
+                    {/* Кнопка назад */}
                     <button
                         onClick={() => navigate('/products')}
                         className='text-celestial-100 text-left ml-5 hover:text-celestial-200 transition-colors'
@@ -71,6 +75,7 @@ const ProductDetailPage = () => {
                         ← Назад
                     </button>
 
+                    {/* Детальное описание товара */}
                     <div className='flex lg:flex-row flex-col gap-y-5'>
                         <div className='flex items-center justify-center 2xl:w-1/3 lg:w-1/2'>
                             <img 

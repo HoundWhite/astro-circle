@@ -6,6 +6,7 @@ const AstrologyPage = () => {
   return (
     <div>
         <Header />
+        {/* Страница астрологии */}
         <section className='my-10 max-w-[1920px] mx-auto'>
             <div className='bg-celestial-500 px-11 py-8 flex flex-col gap-7'>
                 {/* Заголовок */}

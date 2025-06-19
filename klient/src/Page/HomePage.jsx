@@ -13,7 +13,7 @@ const HomePage = () => {
              <div className='lg:w-1/2'>
                 <img src='./media/glav.png' alt='приветствие' loading='lazy' />
             </div>
-            <div className='flex flex-col gap-y-3 justify-center lg:w-1/2 lg:pl-16 lg:pr-28 px-6 pb-7 2xl:text-lg md:text-sm text-sm text-celestial-100 text-justify'>
+            <div className='flex flex-col gap-y-7 justify-center lg:w-1/2 lg:pl-16 lg:pr-28 px-6 pb-7 2xl:text-xl md:text-base text-base text-celestial-100 text-justify'>
               <h2 className='lg:text-4xl md:text-2xl text-xl text-center font-bold md:text-left'>Добро пожаловать на сайт об астрологии и нумерологии!</h2>
               <p>Здесь вы узнаете, что такое астрология и нумерология, как они работают и какое влияние могут 
                 оказать на нашу жизнь. Мы расскажем о значении звезд, чисел и символических атрибутов: талисманов, 

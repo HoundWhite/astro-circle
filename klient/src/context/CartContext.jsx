@@ -22,6 +22,7 @@ export const CartProvider = ({ children }) => {
         localStorage.setItem('cart', JSON.stringify(cart));
     }, [cart]);
 
+    // Добавление товара в корзину
     const addToCart = (product) => {
         setCart(prevCart => {
             // Проверяем, есть ли уже такой товар в корзине
@@ -41,10 +42,12 @@ export const CartProvider = ({ children }) => {
         });
     };
 
+    // Удаление товара из корзины
     const removeFromCart = (productId) => {
         setCart(prevCart => prevCart.filter(item => item.id !== productId));
     };
 
+    // Обновление количества товара в корзине
     const updateQuantity = (productId, quantity) => {
         if (quantity < 1) return;
         
@@ -57,14 +60,17 @@ export const CartProvider = ({ children }) => {
         );
     };
 
+    // Очистка корзины
     const clearCart = () => {
         setCart([]);
     };
 
+    // Получение общей стоимости товаров в корзине
     const getTotalPrice = () => {
         return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
     };
 
+    // Получение общего количества товаров в корзине
     const getTotalItems = () => {
         return cart.reduce((total, item) => total + item.quantity, 0);
     };

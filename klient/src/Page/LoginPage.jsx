@@ -7,6 +7,7 @@ const LoginPage = () => {
     const [error, setError] = useState({})
     const navigate = useNavigate()
 
+    // Обработка отправки формы
     const handleSubmit = async (e) => {
         e.preventDefault()
         setError({})
@@ -51,8 +52,10 @@ const LoginPage = () => {
     }
 
     return (
+        // Страница входа
         <div className='flex items-center justify-center md:pt-5'>
             <div className='w-full max-w-lg'>
+                {/* Форма входа */}
                 <form onSubmit={handleSubmit} className='flex flex-col gap-y-7 bg-celestial-500 p-7 md:rounded-3xl rounded-b-2xl items-center'>
                     <div>  
                         <h3 className='2xl:text-2xl md:text-2xl text-xl font-bold text-center text-celestial-100'>Вход в систему</h3>

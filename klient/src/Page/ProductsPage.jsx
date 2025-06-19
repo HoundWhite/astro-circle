@@ -10,6 +10,7 @@ const ProductsPage = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    // Загрузка товаров
     useEffect(() => {
         const fetchProducts = async () => {
             try {
@@ -25,6 +26,7 @@ const ProductsPage = () => {
         fetchProducts();
     }, []);
 
+    // Обработка клика на карточке товара
     const handleProductClick = (productId) => {
         navigate(`/product/${productId}`);
     };

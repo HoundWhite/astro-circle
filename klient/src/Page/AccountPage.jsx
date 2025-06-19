@@ -11,6 +11,7 @@ const AccountPage = () => {
     const [error, setError] = useState(null);
     const { cart, removeFromCart, updateQuantity, getTotalPrice } = useCart();
 
+    // Загрузка данных пользователя
     useEffect(() => {
         const fetchUserData = async () => {
             try {
@@ -54,6 +55,7 @@ const AccountPage = () => {
         fetchUserData();
     }, [navigate]);
 
+    // Выход из аккаунта
     const handleLogout = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('user');
@@ -87,15 +89,16 @@ const AccountPage = () => {
     return (
         <div>
             <Header />
+            {/* Личный кабинет */}
             <section className='my-10 max-w-[1920px] mx-auto'>
                 <div className='flex flex-col gap-y-8 md:px-14 px-2 mt-12'>
                     <h3 className='2xl:text-4xl md:text-2xl text-3xl font-bold text-center text-celestial-100'>
                         Личный кабинет
                     </h3>
 
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                    <div className='flex flex-col lg:flex-row gap-8'>
                         {/* Информация о пользователе */}
-                        <div className='bg-celestial-500 p-8 rounded-3xl'>
+                        <div className='bg-celestial-500 p-8 rounded-3xl w-1/3'>
                             <h2 className='text-2xl font-semibold text-celestial-100 mb-6'>
                                 Информация о пользователе
                             </h2>
@@ -121,7 +124,7 @@ const AccountPage = () => {
                         </div>
 
                         {/* Корзина */}
-                        <div className='bg-celestial-500 p-8 rounded-3xl'>
+                        <div className='bg-celestial-500 p-8 rounded-3xl w-2/3'>
                             <h2 className='text-2xl font-semibold text-celestial-100 mb-6'>
                                 Корзина
                             </h2>
@@ -164,7 +167,7 @@ const AccountPage = () => {
                                         </div>
                                     ))}
                                     <div className='mt-6 flex justify-between items-center'>
-                                        <p className='text-celestial-100 text-lg'>
+                                        <p className='bg-celestial-100 text-celestial-700 shadow-lg text-xl font-semibold py-1 px-2 rounded-lg'>
                                             Итого: {getTotalPrice()} ₽
                                         </p>
                                         <button

@@ -13,6 +13,7 @@ const RegPage = () => {
     const [errors, setErrors] = useState({})
     const [isLoading, setIsLoading] = useState(false)
 
+    // Валидация формы
     const validateForm = () => {
         const newErrors = {}
         
@@ -42,6 +43,7 @@ const RegPage = () => {
         return Object.keys(newErrors).length === 0
     }
 
+    // Обработка изменения поля
     const handleInputChange = (e) => {
         const {name, value} = e.target
         setForma({...forma, [name]: value})
@@ -51,6 +53,7 @@ const RegPage = () => {
         }
     }
 
+    // Обработка отправки формы
     const handleInputSubmit = async (e) => {
         e.preventDefault()
         
@@ -119,8 +122,10 @@ const RegPage = () => {
     }
 
     return (
+        // Страница регистрации
         <div className='flex items-center justify-center md:pt-5'>
             <div className='w-full max-w-lg'>
+                {/* Форма регистрации */}
                 <form onSubmit={handleInputSubmit} className='flex flex-col gap-y-7 bg-celestial-500 p-7 md:rounded-3xl rounded-b-2xl items-center'>
                     <div>  
                         <h3 className='2xl:text-2xl md:text-2xl text-xl font-bold text-center text-celestial-100'>Регистрация</h3>

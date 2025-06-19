@@ -8,6 +8,7 @@ const ServicePage = () => {
   const navigate = useNavigate();
   const { addToCart } = useCart();
 
+  // Обработка добавления услуги в корзину
   const handleAddToCart = (service) => {
     addToCart(service);
     alert('Услуга добавлена в корзину!');
