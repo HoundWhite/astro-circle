@@ -20,3 +20,20 @@ Received registration data: {'name': 'Южный Андрей Андреевич', 'telephon': '8756
 Serializer is valid
 User created successfully: pinkbirdvb@gmail.com
 Token created: c3f73b9c311c870a46fde7be6e53ddafe0800159
+Fetching profile for user: pinkbirdvb@gmail.com
+Fetching profile for user: pinkbirdvb@gmail.com
+Fetching profile for user: pinkbirdvb@gmail.com
+Fetching profile for user: pinkbirdvb@gmail.com
+Received registration data: {'name': 'Пупкин Василий Сергеевич', 'telephon': '89588867269', 'email': 'pinkbirdvb@gmail.com', 'password': '456tyu90o'}
+Validation errors: {'email': [ErrorDetail(string='user with this email address already exists.', code='unique')]}
+Received registration data: {'name': 'Пупкин Василий Сергеевич', 'telephon': '89588867269', 'email': 'redSnake@mail.com', 'password': '345tyu890o'}
+Serializer is valid
+User created successfully: redSnake@mail.com
+Token created: 80be8ea305520a9a5a1271d621c111014adcfe1c
+Fetching profile for user: redSnake@mail.com
+Fetching profile for user: redSnake@mail.com
+Received registration data: {'name': 'Пупкин Василий Сергеевич', 'telephon': '89588867269', 'email': '1@mail.ru', 'password': '123456789'}
+Fetching profile for user: redSnake@mail.com
+Fetching profile for user: redSnake@mail.com
+Fetching profile for user: redSnake@mail.com
+Fetching profile for user: redSnake@mail.com
